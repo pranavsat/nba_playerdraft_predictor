@@ -1,4 +1,4 @@
-# 🏀 NBA Draft Prediction – UTS 36120 Assignment 1 - Group 24
+# 🏀 NBA Draft Prediction 
 
 <p align="center">
   <img src="https://cdn.nba.com/manage/2024/01/GettyImages-2158847399-scaled-e1719459595813.jpg"
