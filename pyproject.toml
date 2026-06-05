@@ -1,0 +1,51 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "advmla_assignment_1"
+version = "0.0.1"
+description = "A data science project to build and evaluate machine learning models for predicting NBA draft outcomes. Developed for UTS 36120 Assignment 1."
+authors = [
+  { name = "Group 24" },
+]
+
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    
+]
+dependencies = [
+    "loguru",
+    "pip",
+    "pytest",
+    "python-dotenv",
+    "ruff",
+    "tqdm",
+    "typer",
+    "pandas (==2.2.2)",
+    "scikit-learn (==1.5.1)",
+    "lightgbm (==4.4.0)",
+    "seaborn (==0.13.2)",
+    "matplotlib (==3.8.4)",
+]
+requires-python = "~=3.11.0"
+
+
+[tool.ruff]
+line-length = 99
+src = ["advmla_assignment_1"]
+include = ["pyproject.toml", "advmla_assignment_1/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["advmla_assignment_1"]
+force-sort-within-sections = true
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "8.2.2"
+jupyterlab = "4.2.3"
+
